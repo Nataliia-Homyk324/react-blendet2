@@ -1,3 +1,4 @@
-export const GridItem = () => {
-  return <h3>GridItem</h3>;
+import css from './GridItem.module.css';
+export const GridItem = ({ children }) => {
+  return <div className={css.item}>{children}</div>;
 };
